@@ -14,8 +14,6 @@
   margin-bottom: 10px;
 }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
 </head>
 <body>
   <header>
@@ -71,31 +69,9 @@
 
   <script src="script/koleksi.js">
   </script>
-
-  <script>
-  // Efek muncul saat halaman dibuka
-  window.addEventListener("DOMContentLoaded", () => {
-    gsap.from("body", { opacity: 0, duration: 0.6 });
-  });
-
-  // Efek keluar saat klik link
-  document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", e => {
-      // Hindari link eksternal & anchor #
-      if (link.href.startsWith(window.location.origin)) {
-        e.preventDefault();
-        gsap.to("body", {
-          opacity: 0,
-          duration: 0.6,
-          onComplete: () => window.location = link.href
-        });
-      }
-    });
-  });
-</script>
-
 </body>
 </html>
+
 
 
 
