@@ -201,7 +201,7 @@ function tutupPopup() {
 
 function kirimPeminjaman() {
   const name = document.getElementById("name").value;
-  const kelas = document.getElementById("class").value;
-  alert(`Terima kasih ${name} dari kelas ${kelas}, permintaan peminjaman buku telah dikirim.`);
+  alert(`Terima kasih, permintaan peminjaman buku telah dikirim.`);
   tutupPopup();
 }
+
